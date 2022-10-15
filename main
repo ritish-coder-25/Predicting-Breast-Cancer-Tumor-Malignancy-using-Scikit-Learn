@@ -28,9 +28,9 @@ for i in range(0, 9):
   ele = int(input())
   input_data.append(ele)
  
- input_measures = np.array([input_data])
- input_measures = input_measures.reshape(len(input_measures), -1)
+ element_measures = np.array([input_data])
+ element_measures = input_measures.reshape(len(element_measures), -1)
  
- prediction = clf.predict(input_measures)
+ prediction = clf.predict(element_measures)
  print(prediction) #if array[2] is printed, then its malignant, and if array[4] is printed, then its beningn
  
